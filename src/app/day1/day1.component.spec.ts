@@ -11,11 +11,6 @@ describe('Day1Component', () => {
       {input: '-1, -2, -3', output: -6},
       {input: '+25, -13', output: 12}
     ];
-    /*
-    +1, +1, +1 results in  3
-+1, +1, -2 results in  0
--1, -2, -3 results in -6
-    */
     
     scenarios.forEach((scenario) => {
       it(`should convert ${scenario.input} to sum of ${scenario.output}`, () => {
