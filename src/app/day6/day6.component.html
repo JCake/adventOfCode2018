@@ -1,3 +1,15 @@
-<p>
-  day6 works!
-</p>
+<h2>Day 6</h2>
+<h3>Part 1</h3>
+<div>
+    <label>Input:</label>
+    <input type="text" [(ngModel)]="input" />
+    <button (click)="result = findSize(input)">Submit</button>
+    <label>Result:</label> <span>{{result}}</span>
+</div>
+<h3>Part 2</h3>
+<div>
+    <label>Input:</label>
+    <input type="text" [(ngModel)]="input" />
+    <button (click)="result2 = findSizeTotalDistance(input)">Submit</button>
+    <label>Result:</label> <span>{{result2}}</span>
+</div>
