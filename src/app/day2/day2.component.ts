@@ -8,6 +8,10 @@ const allChars = 'qwertyuioplkjhgfdsazxcvbnm'.split('');
   styleUrls: ['./day2.component.css']
 })
 export class Day2Component implements OnInit {
+
+  input:string;
+  result:string;
+  
   checksum(inputs: string): number {
     let exactly2Count = 0;
     let exactly3Count = 0;

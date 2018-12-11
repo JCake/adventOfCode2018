@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Day3Component implements OnInit {
 
+  input:string;
+  result:string;
+
   findClaims(input: string): Map<string, number> {
     const claimCounts: Map<string, number> = new Map<string, number>();
     const claims = input.substr(1).split('#');
