@@ -40,7 +40,7 @@ describe('Day8Component', () => {
     });
   });
   
-  fdescribe('find root node value', () => {
+  describe('find root node value', () => {
     it('should find root node value for single node with single metadata entry', () => {
       expect(component.rootValue('0 1 5')).toEqual(5);
     });
