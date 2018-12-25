@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Day5Component implements OnInit {
 
   input:string;
-  result:string;
+  result:number;
+  result2:number;
 
   remainingUnit(input: string): number {
     let length = 0;

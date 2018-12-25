@@ -15,13 +15,17 @@ export class Day10Component implements OnInit {
         xv: parseInt(coordAndVel[2]), yv: parseInt(coordAndVel[3])});
     });
     
-    while(!this.couldBeWords(coords)){
+    let timesCouldBeWords = 0;
+    while(timesCouldBeWords < 5){
       coords.forEach((coord) => {
         coord.x = coord.x + coord.xv;
         coord.y = coord.y + coord.yv;
       }); 
+      if(this.couldBeWords(coords)){
+        this.print(this.buildGrid(coords));
+        ++timesCouldBeWords;
+      }
     }
-    this.print(this.buildGrid(coords));
     return true;
   }
 
@@ -35,7 +39,7 @@ export class Day10Component implements OnInit {
       }
     });
 
-    const numLinesNeeded = coords.length / 10;
+    const numLinesNeeded = coords.length / 20;
 
     let possibleWords = 0;
     xToYs.forEach((value) => {
@@ -49,7 +53,6 @@ export class Day10Component implements OnInit {
         } else {
           YsInARow = 1;
         }
-        console.log(`ys in a row: ${YsInARow}`);
         if(YsInARow >= 5){
           possibleWords += 1;
         }

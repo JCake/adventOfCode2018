@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Day4Component implements OnInit {
 
   input:string;
-  result:string;
+  result:number;
+  result2:number;
 
   orderInput(input: string): string {
     let inputParts: string[] = input.substring(1).split('[');

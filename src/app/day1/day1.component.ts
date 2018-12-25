@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Day1Component implements OnInit {
 
   input:string;
-  result:string;
+  result:number;
+  result2:number;
 
   constructor() { }
 

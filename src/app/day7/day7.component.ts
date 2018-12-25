@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Day7Component implements OnInit {
 
+  input: string;
+  result: string;
+  result2: string;
+
   stepsWithPrereqs(input: string): Map<string,string[]> {
     const instructions: string[] = input.match(/. must be finished before step ./g);
     let prereqs = new Map<string,string[]>();

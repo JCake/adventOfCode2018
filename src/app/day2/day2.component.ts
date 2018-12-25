@@ -10,7 +10,8 @@ const allChars = 'qwertyuioplkjhgfdsazxcvbnm'.split('');
 export class Day2Component implements OnInit {
 
   input:string;
-  result:string;
+  result:number;
+  result2:string;
   
   checksum(inputs: string): number {
     let exactly2Count = 0;

@@ -7,6 +7,10 @@ import { getPreviousOrParentTNode } from '@angular/core/src/render3/state';
   styleUrls: ['./day8.component.css']
 })
 export class Day8Component implements OnInit {
+  input: string;
+  result: number;
+  result2: number;
+
   rootValue(input: string): number {
     const numbers = input.match(/(\d+)/g).map((numStr) => parseInt(numStr));
     let treeNodes = [];
