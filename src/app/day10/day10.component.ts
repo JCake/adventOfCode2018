@@ -39,7 +39,7 @@ export class Day10Component implements OnInit {
       }
     });
 
-    const numLinesNeeded = coords.length / 20;
+    const numLinesNeeded = 2;
 
     let possibleWords = 0;
     xToYs.forEach((value) => {

@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Day10Component } from './day10.component';
 
-fdescribe('Day10Component', () => {
+describe('Day10Component', () => {
   let component: Day10Component = new Day10Component();
 
   it('should find hidden message', () => {
